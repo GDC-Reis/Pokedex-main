@@ -5,14 +5,14 @@ export default function buscaPokemon(nome) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            console.log(data, 'data');
 
             const namePokemon = data.name;
             const nomePokemonBase = document.querySelector('.nome');
             const imagemFormaBase = document.querySelector('.formaBase');
 
             nomePokemonBase.innerText = data.name;
-            imagemFormaBase.src = data.sprites.other.dream_world.front_default;
+            imagemFormaBase.src = data.sprites.other["official-artwork"].front_default;
 
             const urlSpecies = data.species.url;
 

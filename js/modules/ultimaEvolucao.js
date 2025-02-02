@@ -5,7 +5,7 @@ export default function ultimaEvolucao(url) {
             const divEvolucao = document.querySelector('.cadeiaEvolutiva');
             const imgEvolucao = document.createElement('img');
             imgEvolucao.classList.add("evolucoesPokemon");
-            imgEvolucao.src = data.sprites.other.dream_world.front_default
+            imgEvolucao.src = data.sprites.other["official-artwork"].front_default;
             imgEvolucao.alt = data.name;
             divEvolucao.appendChild(imgEvolucao);
         })
