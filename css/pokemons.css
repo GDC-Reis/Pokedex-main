@@ -19,8 +19,8 @@
 
 .formaBase{
     position: relative;
-    width: 4rem;
-    margin-top: -5.7rem;
+    width: 6rem;
+    margin-top: -5.9rem;
 }
 
 .formaBase:hover{
@@ -29,10 +29,10 @@
 }
 
 .nome{
-    color: #FFF;
+    color: #000;
     font-weight: bold;
-    font-size: .95rem;
-    /* line-height: 10px; */
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 @keyframes shake {

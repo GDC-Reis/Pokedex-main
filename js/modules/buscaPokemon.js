@@ -19,6 +19,8 @@ export default function buscaPokemon(nome) {
             pegaCor(urlSpecies);
             buscaEvolucao(urlSpecies, namePokemon);
 
+            return nomePokemonBase;
+
         })
         .catch((error) => {
             console.error("Erro ao buscar Pokémon:", error);

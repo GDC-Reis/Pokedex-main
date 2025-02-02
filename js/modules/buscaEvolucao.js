@@ -2,9 +2,8 @@ import primeiraEvolucao from "./primeiraEvolucao.js";
 import ultimaEvolucao from "./ultimaEvolucao.js";
 
 export default function buscaEvolucao(url, name) {
-    // Limpa o conteúdo anterior de evoluções antes de buscar as novas
-    const modalImg = document.querySelector('.cadeiaEvolutiva');
-    modalImg.innerHTML = '';  // Remove todo o conteúdo de evoluções anterior
+     const modalImg = document.querySelector('.cadeiaEvolutiva');
+    modalImg.innerHTML = '';  
 
     fetch(url)
         .then((response) => response.json())
